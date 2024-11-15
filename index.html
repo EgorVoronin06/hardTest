@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Manager</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <noscript>Для работы этого приложения необходимо включить JavaScript.</noscript>
+  <div id="root"></div>
+  
+  <!-- Подключаем React -->
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+  <!-- Наш основной JS-код -->
+  <script type="text/babel">
+    class App extends React.Component {
+      render() {
+        return (
+          <div>
+            <h1>Добро пожаловать в Medical Manager!</h1>
+            <p>Здесь будет наш интерфейс...</p>
+          </div>
+        );
+      }
+    }
+    
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
